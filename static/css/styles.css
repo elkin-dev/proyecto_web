@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital@1&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap");
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+header {
+  background-color: #283747;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 6px -6px black;
+}
+
+.logo {
+  color: #f8f8f8;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+/* Estilos de la barra de navegación */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #17a2b8;
+}
+
+section {
+  position: relative;
+}
+
+.media-container {
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.full-width-image {
+  width: 100%;
+  display: block;
+  height: 300px; /* Ajusta la altura deseada de la imagen */
+  object-fit: cover; /* Ajusta la propiedad de ajuste del objeto según tus necesidades */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.additional-text {
+  font-family: "Playpen Sans", cursive;
+  color: #f8f8f8;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  position: absolute;
+  top: 50%; /* Ajusta la posición vertical del texto */
+  left: 50%; /* Ajusta la posición horizontal del texto */
+  transform: translate(-50%, -50%);
+}
+
+.special-greeting {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 36px;
+  border-radius: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Playpen Sans", cursive;
+  transition: all 0.3s ease;
+}
+
+.special-greeting:hover {
+  animation: shake 0.5s;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+/* Estilos del pie de página */
+footer {
+  background-color: #0077cc;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  color: #f8f8f8;
+  position: relative;
+}
